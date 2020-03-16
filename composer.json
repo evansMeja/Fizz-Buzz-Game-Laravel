@@ -1,10 +1,4 @@
 {
-    "require": {
-        "sqlite3": "*"
-    }
-}
-
-{
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
@@ -24,7 +18,8 @@
         "laravel/framework": "^7.0",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^2.0",
-        "laravelcollective/html": "^6.1"
+        "laravelcollective/html": "^6.1",
+		"sqlite3": "*"
     },
     "require-dev": {
         "facade/ignition": "^2.0",
