@@ -10,7 +10,7 @@
 		<label for="other">Hard</label>
 	</div>
 
-	<h4 class="alert alert-info" id="gameover">Easy Level | Click Start</h4>
+	<h4 class="alert alert-info" id="gameover">Easy Level | Click Start to Play</h4>
 	
 	<div class="centerContent">
 		<a id="restart" href="#" type="button" class="btn btn-info">Start</a>
@@ -23,9 +23,9 @@
 	<div class="gamefield">
 		<hr/>
 		<div class="row centerContent">
-			<div class="col-4 col-md-4 col-sm-4 col-xs-4"><h5>Highest: <span id="high_score">{{$user->user_high_score}}</span></h5></div>
-			<div class="col-4 col-md-4 col-sm-4 col-xs-4"><h5>Missed: <span id="missed_score">0</span></h5></div>
-			<div class="col-4 col-md-4 col-sm-4 col-xs-4"><h5>Total: <span id="total_score">0</span></h5></div>
+			<div class="col-4 col-md-4 col-sm-4 col-xs-4"><h5 >Highest: <span id="high_score">{{$user->user_high_score}}</span></h5></div>
+			<div class="col-4 col-md-4 col-sm-4 col-xs-4"><h5 class="missed">Missed: <span id="missed_score">0</span></h5></div>
+			<div class="col-4 col-md-4 col-sm-4 col-xs-4"><h5 class="scored">Total: <span id="total_score">0</span></h5></div>
 		</div>
 		
 		<hr/>
@@ -49,7 +49,7 @@
 	<hr/>
 	
 	<div class="centerContent">
-		<a id="view_top_scores" type="button" class="view_top_scores btn btn-link" >Whatsapp</a>
+		<a id="view_top_scores" href="https://wa.me/254740664839" class="view_top_scores btn btn-link" >Whatsapp</a>
 	</div>
 	
 	<form action="#" id="myform">

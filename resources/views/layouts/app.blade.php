@@ -12,7 +12,8 @@
 <body>
 	<div class="container maincontainer">
 		@include('inc.navbar')        
-		@yield('content') 
+		@yield('content')
+		@include('inc.footer')
 	</div>
 </body>     
 </html>
