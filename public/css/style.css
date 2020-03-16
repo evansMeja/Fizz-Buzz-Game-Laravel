@@ -1,5 +1,5 @@
 body{
-	margin-bottom:70px;
+	margin-bottom:20px;
 	margin-top:70px;
 	background-color:white;
 }
@@ -18,7 +18,7 @@ body{
 }
 
 .gamefield{
-	width:70%;
+	width:99%;
 	height:400px;
 	margin:auto;
 	border:1px solid green;

@@ -33,7 +33,7 @@
 		
 		<hr/>
 		<div class="row">
-			<div class="col-md-3"><span id="mynumber">00.00</span></div>
+			<div class="col-md-12"><span id="mynumber">00.00</span></div>
 		</div>		
 	</div>
 <hr/>
@@ -42,6 +42,10 @@
 		<button id="buzz" type="button" class="btn btn-info">Buzz</button>
 		<button id="fizzbuzz" type="button" class="btn btn-info">FizzBuzz</button>
 		<button id="number" type="button" class="btn btn-info">None</button>
+	</div>
+	
+	<hr/>
+	<div class="centerContent">
 		<a id="reset_scores" href="#" type="button" class="btn btn-info centerContent">Reset Scores</a>
 	</div>
 	
