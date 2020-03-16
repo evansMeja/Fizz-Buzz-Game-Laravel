@@ -14,7 +14,7 @@ class AddScoreToUsersTable extends Migration
     public function up()
     {
         Schema::table('users', function (Blueprint $table) {
-            $table->integer('user_high_score');
+            $table->integer('user_high_score')->nullable();
         });
     }
 
