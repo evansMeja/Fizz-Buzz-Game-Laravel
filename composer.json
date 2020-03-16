@@ -1,4 +1,10 @@
 {
+    "require": {
+        "sqlite3": "*"
+    }
+}
+
+{
     "name": "laravel/laravel",
     "type": "project",
     "description": "The Laravel Framework.",
@@ -6,6 +12,9 @@
         "framework",
         "laravel"
     ],
+	"require": {
+        "sqlite3": "*"
+    },
     "license": "MIT",
     "require": {
         "php": "^7.2.5",
