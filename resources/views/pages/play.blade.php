@@ -25,7 +25,7 @@
 			<div class="col-md-12"><span><h3>Easy Level | Scores</span></h3></span></div>
 		</div>
 		<hr/>
-		<div class="row">
+		<div class="row centerContent">
 			<div class="col-3 col-md-3 col-sm-3 col-xs-3"><h5>Highest: <span id="high_score">{{$user->user_high_score}}</span></h5></div>
 			<div class="col-3 col-md-3 col-sm-3 col-xs-3"><h5>Missed: <span id="missed_score">0</span></h5></div>
 			<div class="col-3 col-md-3 col-sm-3 col-xs-3"><h5>Total: <span id="total_score">0</span></h5></div>
@@ -33,7 +33,7 @@
 		
 		<hr/>
 		<div class="row">
-			<div class="col-md-12"><span id="mynumber">00.00</span></div>
+			<div class="col-md-12 centerContent"><span id="mynumber">00.00</span></div>
 		</div>		
 	</div>
 <hr/>
