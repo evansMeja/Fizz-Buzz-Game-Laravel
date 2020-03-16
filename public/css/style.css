@@ -1,0 +1,38 @@
+body{
+	margin-bottom:70px;
+	margin-top:70px;
+	background-color:white;
+}
+
+.mynavbar{
+	background-color:rgb(24, 61, 71);
+}
+
+.footer{
+	background-color:white;
+}
+
+.maincontainer{
+	background:rgb(107, 215, 247);
+	border-radius:2%;
+}
+
+.gamefield{
+	width:70%;
+	height:400px;
+	margin:auto;
+	border:1px solid green;
+	background:rgb(255, 168, 123);
+	opacity:0.5;
+	padding-left:3%;
+	border-radius:2%;
+}
+
+.centerContent{
+	text-align:center;
+}
+
+#mynumber{
+	text-align:center;
+	font-size:100px;
+}

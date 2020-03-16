@@ -9,11 +9,10 @@
 	@include('inc.css')
 	@include('inc.js')
 </head>
-
-<body style="margin-bottom:100px;">
-	<div class="container">
+<body>
+	<div class="container maincontainer">
 		@include('inc.navbar')        
-		@yield('content')
+		@yield('content') 
 	</div>
 </body>     
 </html>

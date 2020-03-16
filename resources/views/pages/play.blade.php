@@ -1,47 +1,65 @@
 @extends('layouts.app')
 @section('content')
-<div id="selectlevel">
-	<h4 class="well" id="gameover">Select Category</h4>
-	<input id="easy" type="radio" id="male" name="levels" value="easy">
-	<label for="male">Easy</label><br>
-	<input id="medium" type="radio" id="female" name="levels" value="medium">
-	<label for="female">Medium</label><br>
-	<input id="hard" type="radio" id="other" name="levels" value="hard">
-	<label for="other">Hard</label>
-</div>
-
-	<h4 class="well" id="gameover">Fizz Buzz Game</h4>
-	<div style="width:100%;height:400px;margin-bottom:2%;border:2px solid green;">
-		<h3>High Score: <span id="high_score">{{$user->user_high_score}}</span></h3>
-		<h3>Missed Score: <span id="missed_score">0</span></h3>
-		<h3>Total Score: <span id="total_score">0</span></h3>
-		<span id="mynumber" style="text-align:center;font-size:100px;">FizzBuzz Game</span>
+	<div id="selectlevel">
+		<h4 class="well" id="gameover">Select Category</h4>
+		<input id="easy" type="radio" id="male" name="levels" value="easy">
+		<label for="male">Easy</label><br>
+		<input id="medium" type="radio" id="female" name="levels" value="medium">
+		<label for="female">Medium</label><br>
+		<input id="hard" type="radio" id="other" name="levels" value="hard">
+		<label for="other">Hard</label>
 	</div>
 
-
-	<button id="fizz" type="button" class="btn btn-info">Fizz</button>
-	<button id="buzz" type="button" class="btn btn-info">Buzz</button>
-	<button id="fizzbuzz" type="button" class="btn btn-info">FizzBuzz</button>
-	<button id="number" type="button" class="btn btn-info">None</button>
-
-
-
-	<a id="restart" href="#" type="button" class="btn btn-info">Restart</a>
-	<a id="reset_scores" href="#" type="button" class="btn btn-info">Reset Scores</a>
+	<h4 class="alert alert-info" id="gameover">Simple Game For Children Though</h4>
+	
+	<div class="centerContent">
+		<a id="restart" href="#" type="button" class="btn btn-info">Start Game</a>
+		<a id="view_top_scores" type="button" class="view_top_scores btn btn-info" >Top Players</a>
+		<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Game Level</a>
+	</div>
 	
 	<hr/>
-	<div>
-	<a id="view_top_scores" type="button" class="view_top_scores btn btn-link" >See Other Players Perfomance</a>
-	</div>
-	<div id="my_results"></div>
 
+	<div class="gamefield">
+		<div class="row">
+			<div class="col-md-12"><span><h3>Easy Level | Scores</span></h3></span></div>
+		</div>
+		<hr/>
+		<div class="row">
+			<div class="col-md-3"><h3>Highest: <span id="high_score">{{$user->user_high_score}}</span></h3></div>
+			<div class="col-md-3"><h3>Missed: <span id="missed_score">0</span></h3></div>
+			<div class="col-md-3"><h3>Total: <span id="total_score">0</span></h3></div>
+		</div>
+		
+		<hr/>
+		<div class="row">
+			<div class="col-md-3"><span id="mynumber">00.00</span></div>
+		</div>		
+	</div>
+<hr/>
+	<div class="centerContent">
+		<button id="fizz" type="button" class="btn btn-info">Fizz</button>
+		<button id="buzz" type="button" class="btn btn-info">Buzz</button>
+		<button id="fizzbuzz" type="button" class="btn btn-info">FizzBuzz</button>
+		<button id="number" type="button" class="btn btn-info">None</button>
+		<a id="reset_scores" href="#" type="button" class="btn btn-info centerContent">Reset Scores</a>
+	</div>
+	
+	<hr/>
+	
+	<div class="centerContent">
+		<a id="view_top_scores" type="button" class="view_top_scores btn btn-link" >Whatsapp</a>
+	</div>
+	
 	<form action="#" id="myform">
 		<input type="hidden" value="{{$user->id}}" id="my_id" name="score">
 		<input type="hidden" value="" id="total_score" name="score">
 		<input type="submit" style="display:none;">
 	</form>
 
+
 	<script>
+	$("#selectlevel").hide();
 		function resetDBScores(){
 			window.location.href="/resetscores/";
 		}
