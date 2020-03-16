@@ -10,10 +10,10 @@
 		<label for="other">Hard</label>
 	</div>
 
-	<h4 class="alert alert-info" id="gameover">Simple Game For Children Though</h4>
+	<h4 class="alert alert-info" id="gameover">Easy Level | Click Start</h4>
 	
 	<div class="centerContent">
-		<a id="restart" href="#" type="button" class="btn btn-info">Start Game</a>
+		<a id="restart" href="#" type="button" class="btn btn-info">Start</a>
 		<a id="view_top_scores" type="button" class="view_top_scores btn btn-info" >Top Players</a>
 		<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Game Level</a>
 	</div>
@@ -21,14 +21,11 @@
 	<hr/>
 
 	<div class="gamefield">
-		<div class="row">
-			<div class="col-md-12"><span><h3>Easy Level | Scores</span></h3></span></div>
-		</div>
 		<hr/>
 		<div class="row centerContent">
-			<div class="col-3 col-md-3 col-sm-3 col-xs-3"><h5>Highest: <span id="high_score">{{$user->user_high_score}}</span></h5></div>
-			<div class="col-3 col-md-3 col-sm-3 col-xs-3"><h5>Missed: <span id="missed_score">0</span></h5></div>
-			<div class="col-3 col-md-3 col-sm-3 col-xs-3"><h5>Total: <span id="total_score">0</span></h5></div>
+			<div class="col-4 col-md-4 col-sm-4 col-xs-4"><h5>Highest: <span id="high_score">{{$user->user_high_score}}</span></h5></div>
+			<div class="col-4 col-md-4 col-sm-4 col-xs-4"><h5>Missed: <span id="missed_score">0</span></h5></div>
+			<div class="col-4 col-md-4 col-sm-4 col-xs-4"><h5>Total: <span id="total_score">0</span></h5></div>
 		</div>
 		
 		<hr/>
