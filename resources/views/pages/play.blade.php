@@ -38,7 +38,7 @@
 		<button id="fizz" type="button" class="btn btn-info">Fizz</button>
 		<button id="buzz" type="button" class="btn btn-info">Buzz</button>
 		<button id="fizzbuzz" type="button" class="btn btn-info">FizzBuzz</button>
-		<button id="number" type="button" class="btn btn-info">None</button>
+		<button id="number" type="button" class="btn btn-info">i</button>
 	</div>
 	
 	<hr/>
