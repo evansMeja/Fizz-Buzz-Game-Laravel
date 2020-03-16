@@ -48,10 +48,6 @@
 	
 	<hr/>
 	
-	<div class="centerContent">
-		<a id="view_top_scores" href="https://wa.me/254740664839" class="view_top_scores btn btn-link" >Whatsapp</a>
-	</div>
-	
 	<form action="#" id="myform">
 		<input type="hidden" value="{{$user->id}}" id="my_id" name="score">
 		<input type="hidden" value="" id="total_score" name="score">
