@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('content')
-<h1 class="jumbotron">Welcome to Fizz Buzz Game</h1>
+<h1 class="jumbotron">Welcome to User</h1>
 <blockquote>
 Random numbers between 1 and 100 will appear on your screen.
 

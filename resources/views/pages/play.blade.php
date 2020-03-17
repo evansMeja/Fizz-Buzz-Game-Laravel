@@ -1,21 +1,11 @@
 @extends('layouts.app')
 @section('content')
-	<div id="selectlevel">
-		<h4 class="well" id="gameover">Select Category</h4>
-		<input id="easy" type="radio" id="male" name="levels" value="easy">
-		<label for="male">Easy</label><br>
-		<input id="medium" type="radio" id="female" name="levels" value="medium">
-		<label for="female">Medium</label><br>
-		<input id="hard" type="radio" id="other" name="levels" value="hard">
-		<label for="other">Hard</label>
-	</div>
-
-	<h4 class="alert alert-info" id="gameover">Easy Level | Click Start to Play</h4>
+	<h4 class="alert alert-info" id="gameover"><span id="mylevelheader">Easy<span> Level | Click Start to Play</h4>
 	
 	<div class="centerContent">
 		<a id="restart" href="#" type="button" class="btn btn-info">Start</a>
-		<a id="view_top_scores" type="button" class="view_top_scores btn btn-info" >Top Players</a>
-		<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">Game Level</a>
+		<a id="view_top_scores" type="button" class="view_top_scores btn btn-info" >Top Players</a>		
+		<a type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">Game Level</a>
 	</div>
 	
 	<hr/>
@@ -53,10 +43,43 @@
 		<input type="hidden" value="" id="total_score" name="score">
 		<input type="submit" style="display:none;">
 	</form>
+	
+
+
+<!-- The Modal -->
+<div class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Select Game Level</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">        
+		<div id="selectlevel">		
+			<input id="easy" type="radio" id="male" name="levels" value="easy">
+			<label for="male">Easy</label><br>
+			<input id="medium" type="radio" id="female" name="levels" value="medium">
+			<label for="female">Medium</label><br>
+			<input id="hard" type="radio" id="other" name="levels" value="hard">
+			<label for="other">Hard</label>
+		</div>		
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
 
 
 	<script>
-	$("#selectlevel").hide();
 		function resetDBScores(){
 			window.location.href="/resetscores/";
 		}
@@ -250,15 +273,14 @@
 
 		 $('input:radio[name="levels"]').change(function() {			 
 				if ($(this).val() == 'easy') {
-					alert("easy");
 					setNewLevel(gameLogic,counter,5000,5);
-					//document.getElementById("mylevelheader").innerHTML = "EASY";
+					document.getElementById("#mylevelheader").innerHTML = "EASY";
 				}else if ($(this).val() == 'medium'){
 					setNewLevel(gameLogic,counter,3000,3);
-					document.getElementById("mylevelheader").innerHTML = "MEDIUM";
+					document.getElementById("#mylevelheader").innerHTML = "MEDIUM";
 				}else if ($(this).val() == 'hard'){
 					setNewLevel(gameLogic,counter,2000,2);
-					document.getElementById("mylevelheader").innerHTML = "HARD";
+					document.getElementById("#mylevelheader").innerHTML = "HARD";
 				}
 				
 			});
