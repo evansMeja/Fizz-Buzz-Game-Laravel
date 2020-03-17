@@ -26,11 +26,7 @@
       <ul class="nav navbar-nav navbar-right">
         <li><a href="/login">{{ Auth::user()->name }}<span class="ui-icon ui-icon-person"></span></a></li>
 		<li>		
-		<a href="{{ route('logout') }}"
-                                    onclick="event.preventDefault();
-                                              document.getElementById('logout-form').submit();">
-                                    Logout
-                                </a>
+		<a href="/logout">Logout </a>
 		</li>
       </ul>
 	@endguest 

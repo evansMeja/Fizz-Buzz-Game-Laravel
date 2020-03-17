@@ -12,8 +12,14 @@ Use App\User;
 |
 */
 
+Route::get('/logout', function () {
+    Auth::logout();
+	return redirect('/login');
+});
+
 Route::get('/rules', function () {
     return view('pages.rules');
+	
 });
 
 Route::get('/play', function () {
