@@ -4,9 +4,9 @@
 <div class="panel">
 Random numbers between 1 and 100 will appear on your screen.
 
-If the number is divisible by 3, click on the Fizz button. If it's divisible by 5, click on the Buzz button. If it's divisible by both 3 and 5, click on the FizzBuzz button. If none of these options apply, click on the i button.
+If the number is divisible by 3, click on the Fizz. If it's divisible by 5, click on the Buzz . If it's divisible by both 3 and 5, click on the FizzBuzz button. If none of these options apply, click on the none.
 
-If you get 10 misses, it's game over. Have fun.
+If you get 4 misses, it's game over. Have fun.
 
 Press 'Start Game' to play.
 </div>
