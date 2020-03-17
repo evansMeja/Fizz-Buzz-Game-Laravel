@@ -11,5 +11,8 @@ If you get 10 misses, it's game over. Have fun.
 Press 'Start Game' to play.
 </div>
 
+<div class="centerContent">
 <a href="/play" class="btn btn-info">Start Game</a>
+</div>
+<hr/>
 @endsection
