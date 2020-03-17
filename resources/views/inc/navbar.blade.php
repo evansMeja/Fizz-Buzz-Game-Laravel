@@ -9,11 +9,7 @@
       <a class="navbar-brand" href="{{ url('/') }}" style="color:orange;">{{ config('app.name', 'Laravel') }}</a>
     </div>
     <div class="collapse navbar-collapse" id="myHeaderNavbar">
-	@guest
-	<ul class="nav navbar-nav"> 
-        <li><a href="/rules">Home</a></li>
-      </ul>
-	  
+	@guest	  
      <ul class="nav navbar-nav navbar-right">
         <li><a href="{{ route('login') }}">{{ __('Login') }}<span class="ui-icon ui-icon-person"></span></a></li>
         <li><a href="{{ route('register') }}">{{ __('Register') }}<span class="ui-icon ui-icon-info">1</span></a></li>
