@@ -14,6 +14,7 @@ body{
 
 .maincontainer{
 	background:rgb(107, 215, 247);
+	padding-top:2%;
 	border-radius:2%;
 }
 
