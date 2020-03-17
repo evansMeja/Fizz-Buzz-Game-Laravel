@@ -11,7 +11,7 @@
     <div class="collapse navbar-collapse" id="myHeaderNavbar">
 	@guest
 	<ul class="nav navbar-nav"> 
-        <li><a href="/about">Home</a></li>
+        <li><a href="/rules">Home</a></li>
       </ul>
 	  
      <ul class="nav navbar-nav navbar-right">
@@ -29,8 +29,7 @@
 		<a href="/logout">Logout </a>
 		</li>
       </ul>
-	@endguest 
+	  @endguest 
     </div>
   </div>
 </nav>
-
